@@ -27,8 +27,8 @@ MochiDecode = NODE_CLASS_MAPPINGS["MochiDecode"]()
 VHS_VideoCombine = NODE_CLASS_MAPPINGS["VHS_VideoCombine"]()
 
 with torch.inference_mode():
-    clip = CLIPLoader.load_clip('google_t5-v1_1-xxl_encoderonly-fp8_e4m3fn.safetensors', type="sd3")[0]
-    model, vae = DownloadAndLoadMochiModel.loadmodel('mochi_preview_dit_fp8_e4m3fn.safetensors', 'mochi_preview_vae_bf16.safetensors', 'fp8_e4m3fn', 'flash_attn')
+    clip = CLIPLoader.load_clip('google_t5-v1_1-xxl_encoderonly-fp16.safetensors', type="sd3")[0]
+    model, vae = DownloadAndLoadMochiModel.loadmodel('mochi_preview_dit_bf16.safetensors', 'mochi_preview_vae_bf16.safetensors', 'bf16', 'flash_attn')
 
 def closestNumber(n, m):
     q = int(n / m)

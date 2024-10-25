@@ -25,7 +25,7 @@ RUN apt update -y && apt install -y software-properties-common build-essential \
 USER camenduru
 
 RUN pip install torch==2.5.0+cu124 torchvision==0.20.0+cu124 torchaudio==2.5.0+cu124 torchtext==0.18.0 torchdata==0.8.0 --extra-index-url https://download.pytorch.org/whl/cu124 && \
-    pip install xformers==0.0.28.post2 https://github.com/camenduru/wheels/releases/download/torch-2.5.0-cu124/flashattn_hopper-3.0.0b1-cp310-cp310-linux_x86_64.whl && \
+    pip install xformers==0.0.28.post2 https://github.com/camenduru/wheels/releases/download/torch-2.5.0-cu124/flash_attn-2.6.3-cp310-cp310-linux_x86_64.whl && \
     pip install aiohttp opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod && \
     pip install torchsde einops diffusers transformers accelerate && \
     git clone https://github.com/comfyanonymous/ComfyUI /content/ComfyUI && \
@@ -34,6 +34,8 @@ RUN pip install torch==2.5.0+cu124 torchvision==0.20.0+cu124 torchaudio==2.5.0+c
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kijai/Mochi_preview_comfy/resolve/main/mochi_preview_dit_bf16.safetensors -d /content/ComfyUI/models/diffusion_models/mochi -o mochi_preview_dit_bf16.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kijai/Mochi_preview_comfy/resolve/main/mochi_preview_dit_fp8_e4m3fn.safetensors -d /content/ComfyUI/models/diffusion_models/mochi -o mochi_preview_dit_fp8_e4m3fn.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kijai/Mochi_preview_comfy/resolve/main/mochi_preview_vae_bf16.safetensors -d /content/ComfyUI/models/vae/mochi -o mochi_preview_vae_bf16.safetensors && \
+    # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large/resolve/main/t5xxl_fp16.safetensors -d /content/ComfyUI/models/clip -o google_t5-v1_1-xxl_encoderonly-fp16.safetensors && \
+    aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/mcmonkey/google_t5-v1_1-xxl_encoderonly/resolve/main/model.safetensors -d /content/ComfyUI/models/clip -o google_t5-v1_1-xxl_encoderonly-fp16.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/mcmonkey/google_t5-v1_1-xxl_encoderonly/resolve/main/t5xxl_fp8_e4m3fn.safetensors -d /content/ComfyUI/models/clip -o google_t5-v1_1-xxl_encoderonly-fp8_e4m3fn.safetensors
 
 COPY ./worker_runpod.py /content/ComfyUI/worker_runpod.py
