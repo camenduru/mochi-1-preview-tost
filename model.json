@@ -4,7 +4,7 @@
     "seed": 0,
     "steps": 50,
     "cfg": 4.5,
-    "num_frames": 121,
+    "num_frames": 127,
     "width": 848,
     "height": 480
 }
