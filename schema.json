@@ -34,25 +34,25 @@
       "description": "Steps",
       "oneOf": [
         {
-          "description": "10",
-          "enum": [
-            10
-          ]
-        },
-        {
-          "description": "20",
-          "enum": [
-            20
-          ]
-        },
-        {
           "description": "30",
           "enum": [
             30
           ]
+        },
+        {
+          "description": "40",
+          "enum": [
+            40
+          ]
+        },
+        {
+          "description": "50",
+          "enum": [
+            50
+          ]
         }
       ],
-      "default": 20
+      "default": 50
     },
     "cfg": {
       "type": "number",
@@ -60,7 +60,143 @@
     },
     "num_frames": {
       "type": "integer",
-      "description": "Num Frames"
+      "widget": "select",
+      "description": "Num Frames",
+      "oneOf": [
+        {
+          "description": "7",
+          "enum": [
+            7
+          ]
+        },
+        {
+          "description": "13",
+          "enum": [
+            13
+          ]
+        },
+        {
+          "description": "19",
+          "enum": [
+            19
+          ]
+        },
+        {
+          "description": "25",
+          "enum": [
+            25
+          ]
+        },
+        {
+          "description": "31",
+          "enum": [
+            31
+          ]
+        },
+        {
+          "description": "37",
+          "enum": [
+            37
+          ]
+        },
+        {
+          "description": "43",
+          "enum": [
+            43
+          ]
+        },
+        {
+          "description": "49",
+          "enum": [
+            49
+          ]
+        },
+        {
+          "description": "55",
+          "enum": [
+            55
+          ]
+        },
+        {
+          "description": "61",
+          "enum": [
+            61
+          ]
+        },
+        {
+          "description": "67",
+          "enum": [
+            67
+          ]
+        },
+        {
+          "description": "73",
+          "enum": [
+            73
+          ]
+        },
+        {
+          "description": "79",
+          "enum": [
+            79
+          ]
+        },
+        {
+          "description": "85",
+          "enum": [
+            85
+          ]
+        },
+        {
+          "description": "91",
+          "enum": [
+            91
+          ]
+        },
+        {
+          "description": "97",
+          "enum": [
+            97
+          ]
+        },
+        {
+          "description": "103",
+          "enum": [
+            103
+          ]
+        },
+        {
+          "description": "109",
+          "enum": [
+            109
+          ]
+        },
+        {
+          "description": "115",
+          "enum": [
+            115
+          ]
+        },
+        {
+          "description": "121",
+          "enum": [
+            121
+          ]
+        },
+        {
+          "description": "127",
+          "enum": [
+            127
+          ]
+        },
+        {
+          "description": "133",
+          "enum": [
+            133
+          ]
+        }
+      ],
+      "default": 97
     },
     "width": {
       "type": "integer",
