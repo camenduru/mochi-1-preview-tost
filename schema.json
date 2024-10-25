@@ -194,17 +194,49 @@
           "enum": [
             133
           ]
+        },
+        {
+          "description": "139",
+          "enum": [
+            139
+          ]
+        },
+        {
+          "description": "145",
+          "enum": [
+            145
+          ]
+        },
+        {
+          "description": "151",
+          "enum": [
+            151
+          ]
+        },
+        {
+          "description": "157",
+          "enum": [
+            157
+          ]
+        },
+        {
+          "description": "163",
+          "enum": [
+            163
+          ]
         }
       ],
       "default": 97
     },
     "width": {
       "type": "integer",
-      "description": "Width"
+      "description": "Width",
+      "widget": "hidden"
     },
     "height": {
       "type": "integer",
-      "description": "Height"
+      "description": "Height",
+      "widget": "hidden"
     },
     "example": {
       "type": "string",
@@ -212,6 +244,8 @@
       "image2": "https://files.catbox.moe/9poovv.mp4",
       "image3": "https://files.catbox.moe/9poovv.mp4",
       "image4": "https://files.catbox.moe/9poovv.mp4",
+      "line1": "Video size: 848x480 pixels",
+      "line2": "Video duration: 5 seconds",
       "video_aspect_ratio": "75%",
       "widget": "example"
     }
