@@ -1,0 +1,10 @@
+{
+    "positive_prompt": "nature video of a red panda eating bamboo in front of a waterfall",
+    "negative_prompt": "blurry",
+    "seed": 0,
+    "steps": 20,
+    "cfg": 4.5,
+    "num_frames": 163,
+    "width": 848,
+    "height": 480
+}
