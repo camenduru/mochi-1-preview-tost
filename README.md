@@ -6,7 +6,8 @@
 https://tost.ai
 
 ### 🧬 Code
-https://github.com/genmoai/models
+https://github.com/genmoai/models <br />
+https://github.com/kijai/ComfyUI-MochiWrapper <br />
 
 ### 🌐 Page
 https://www.genmo.ai/blog
