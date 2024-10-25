@@ -182,48 +182,6 @@
           "enum": [
             121
           ]
-        },
-        {
-          "description": "127",
-          "enum": [
-            127
-          ]
-        },
-        {
-          "description": "133",
-          "enum": [
-            133
-          ]
-        },
-        {
-          "description": "139",
-          "enum": [
-            139
-          ]
-        },
-        {
-          "description": "145",
-          "enum": [
-            145
-          ]
-        },
-        {
-          "description": "151",
-          "enum": [
-            151
-          ]
-        },
-        {
-          "description": "157",
-          "enum": [
-            157
-          ]
-        },
-        {
-          "description": "163",
-          "enum": [
-            163
-          ]
         }
       ],
       "default": 97
